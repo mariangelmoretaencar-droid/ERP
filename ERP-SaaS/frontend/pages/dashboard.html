@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP SaaS | Panel principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <aside class="sidebar">
+           
+<div class="brand">
+    <img
+        src="{{ url_for('static', filename='img/Logotipo.png') }}"
+        alt="Logotipo Enterprise"
+        class="brand-logo"
+    >
+
+    <div>
+        <h2>Enterprise</h2>
+        <span>ERP PLATFORM</span>
+    </div>
+</div>
+
+
+            <div class="company">
+                <div class="company-avatar">EC</div>
+                <div>
+                    <strong>Mi empresa</strong>
+                    <small>Plan empresarial</small>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <span class="nav-label">GENERAL</span>
+
+                <a href="/" class="nav-item active">
+                    <span>▦</span> Panel principal
+                </a>
+
+                <span class="nav-label">GESTIÓN EMPRESARIAL</span>
+
+                <a href="#" class="nav-item"><span>♙</span> Clientes</a>
+                <a href="#" class="nav-item"><span>▤</span> Proveedores</a>
+                <a href="#" class="nav-item"><span>▣</span> Productos</a>
+                <a href="#" class="nav-item"><span>⇄</span> Inventario</a>
+                <a href="#" class="nav-item"><span>▧</span> Ventas</a>
+                <a href="#" class="nav-item"><span>▨</span> Compras</a>
+
+                <span class="nav-label">ADMINISTRACIÓN</span>
+
+                <a href="#" class="nav-item"><span>＄</span> Finanzas</a>
+                <a href="#" class="nav-item"><span>♧</span> Recursos humanos</a>
+                <a href="#" class="nav-item"><span>▥</span> Reportes</a>
+                <a href="#" class="nav-item"><span>⚙</span> Configuración</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-avatar">AD</div>
+                <div>
+                    <strong>Administrador</strong>
+                    <small>admin@empresa.com</small>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <span class="breadcrumb">General /</span>
+                    <strong>Panel principal</strong>
+                </div>
+
+                <div class="topbar-actions">
+                    <button class="icon-button" aria-label="Notificaciones">♧</button>
+                    <div class="topbar-date" id="currentDate"></div>
+                </div>
+            </header>
+
+            <section class="dashboard">
+
+                <div class="welcome">
+                    <div>
+                        <span class="eyebrow">RESUMEN GENERAL</span>
+                        <h1>Panel principal</h1>
+                        <p>Bienvenido a tu centro de gestión empresarial.</p>
+                    </div>
+
+                    <button class="primary-button">+ Nuevo registro</button>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span>Ingresos totales</span>
+                            <span class="stat-icon purple">$</span>
+                        </div>
+                        <h2>RD$ 245,800</h2>
+                        <small class="positive">↑ 12.5% <span>vs. mes anterior</span></small>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span>Ventas realizadas</span>
+                            <span class="stat-icon blue">▧</span>
+                        </div>
+                        <h2>128</h2>
+                        <small class="positive">↑ 8.2% <span>vs. mes anterior</span></small>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span>Clientes registrados</span>
+                            <span class="stat-icon green">♙</span>
+                        </div>
+                        <h2>356</h2>
+                        <small class="positive">↑ 5.4% <span>vs. mes anterior</span></small>
+                    </article>
+
+                    <article class="stat-card">
+                        <div class="stat-top">
+                            <span>Gastos totales</span>
+                            <span class="stat-icon orange">＄</span>
+                        </div>
+                        <h2>RD$ 86,400</h2>
+                        <small class="negative">↑ 3.1% <span>vs. mes anterior</span></small>
+                    </article>
+
+                </div>
+
+                <div class="content-grid">
+
+                    <section class="panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Actividad reciente</h3>
+                                <p>Últimos movimientos del sistema</p>
+                            </div>
+                            <button class="text-button">Ver todo</button>
+                        </div>
+
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="activity-icon green">＋</div>
+                                <div>
+                                    <strong>Nuevo cliente registrado</strong>
+                                    <small>Cliente de ejemplo</small>
+                                </div>
+                                <span>Hace 5 min</span>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon blue">▧</div>
+                                <div>
+                                    <strong>Nueva venta registrada</strong>
+                                    <small>Factura #0001</small>
+                                </div>
+                                <span>Hace 25 min</span>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon orange">▤</div>
+                                <div>
+                                    <strong>Compra registrada</strong>
+                                    <small>Orden #0001</small>
+                                </div>
+                                <span>Hace 1 hora</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Estado del sistema</h3>
+                                <p>Información general</p>
+                            </div>
+                            <span class="status-dot">● Operativo</span>
+                        </div>
+
+                        <div class="system-info">
+                            <div><span>Módulos disponibles</span><strong>12</strong></div>
+                            <div><span>Usuarios activos</span><strong>1</strong></div>
+                            <div><span>Almacenamiento</span><strong>Local</strong></div>
+                            <div><span>Versión</span><strong>0.1.0</strong></div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <footer class="dashboard-footer">
+                    ERP SaaS · Versión 0.1.0 · Todos los derechos reservados
+                </footer>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
